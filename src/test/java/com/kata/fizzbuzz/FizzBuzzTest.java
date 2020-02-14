@@ -7,6 +7,8 @@ import org.junit.Test;
 
 public class FizzBuzzTest {
 
+    private static final String ONE = "1";
+    private static final String TWO = "2";
     private FizzBuzz fizzBuzz;
 
     @Before
@@ -16,11 +18,11 @@ public class FizzBuzzTest {
 
     @Test
     public void fizzBuzzShouldReturn1For1(){
-        Assert.assertThat(fizzBuzz.getFizzBuzz(1), Is.is("1"));
+        Assert.assertThat(fizzBuzz.getFizzBuzz(1), Is.is(ONE));
     }
 
     @Test
     public void fizzBuzzShouldReturn2For2() {
-        Assert.assertThat(fizzBuzz.getFizzBuzz(2), Is.is("2"));
+        Assert.assertThat(fizzBuzz.getFizzBuzz(2), Is.is(TWO));
     }
 }
